@@ -1,0 +1,38 @@
+table {
+    width: 70%;
+    margin: auto;
+  }
+
+  td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.mat-sort-header-container {
+    justify-content: center !important;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #63806E;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.color{
+  background: #63806E;
+}

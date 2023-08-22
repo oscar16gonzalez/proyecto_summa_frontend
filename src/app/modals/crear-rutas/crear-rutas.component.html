@@ -1,0 +1,25 @@
+<div class="block mx-auto my-12 p-8 bg-white w-2/3 border border-grat-200 rounded-lg shadow-lg text-gray-800">
+    <h1 class="text-3xl font-bold text-center">REGISTRAR UNA RUTA</h1>
+
+    <form [formGroup]="registerRutaForm" (ngSubmit)="onSubmit()">
+
+        <input type='Date' [ngModel]='fecha | date:"MM/dd/yyyy" ' name="fecha" placeholder="Fecha" formControlName="fecha"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+        <input type="text" name="tipo_vehiculo" placeholder="Tipo Vehiculo" formControlName="tipo_vehiculo"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+        <input type="text" name="hora_salida" placeholder="Hora Salida" formControlName="hora_salida"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+        <input type="text" name="cupos_disponibles" placeholder="Cupos Disponibles" formControlName="cupos_disponibles"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+        <input type="text" name="origen" placeholder="Origen" formControlName="origen"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+        <input type="text" name="destino" placeholder="Destino" formControlName="destino"
+          class="border border-gray-200 w-full placeholder-gray-500 p-2 my-2 bg-gray-200 focus:bg-white" required />
+
+        <button type="submit"
+          class="rounded-md bg-green-500 w-full text-lg text-white font-semibold p-2 my-3 hover:bg-green-600 focus:bg-green-700">
+          Enviar
+        </button>
+      </form>     
+      <span class="text-red-400 text-center font-semibold">{{errorResponse}}</span>
+</div>
