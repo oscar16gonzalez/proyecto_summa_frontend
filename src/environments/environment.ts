@@ -5,6 +5,8 @@
 export const environment = {
   production: false,
   serverUrl: 'http://localhost:3000/api',
+  // serverUrl: 'http://34.229.224.238:3000/api', // url del servidor AWS
+
 };
 
 /*
